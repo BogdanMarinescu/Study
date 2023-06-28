@@ -1,0 +1,8 @@
+## Creates our branch:
+1. git branch branch-name
+## Moves to our branch:
+1.1. git switch branch-name
+1.2. git checkout branch-name
+## Creates and moves us to our branch:
+1.3. git checkout -b branch-name
+1.4. git switch -c branch-name
