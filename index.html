@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="./styles.css"> 
         <script defer src="./master.js"></script>
-        
+
     </head>
 
-    <body>
+    <body style="background-color: yellow;">
 
         <p>To be continued!</p>
         <p id="Important">Ce ma intereseaza pe mine</p>
@@ -59,7 +59,11 @@
         </dl>
 
         <div>
-        <img src="https://picsum.photos/id/15/200/300" width="200px" height="300px">
+        <img src="https://picsum.photos/id/28/200/300" 
+        width="200px"
+        height="300px"
+        alt="Forest" 
+        />
         </div>
 
         <div>
@@ -73,6 +77,63 @@
             <img src="https://picsum.photos/id/15/200/300" height="300px">
         </picture>
 
+        <table border="1" style="margin-bottom: 15px;">
+
+            <colgroup>
+                <col style="background-color: red;"/>
+                <col style="background-color: blue;"/>
+                <col style="background-color: green;" span="2"/>
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>Cell 1</th>
+                    <th>Cell 2</th>
+                    <th>Cell 3</th>
+                    <th>Cell 4</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td colspan="2">1</td>
+                    <td>2</td>
+                    <!-- <td>3</td> -->
+                    <!-- <td>4</td> -->
+                </tr>
+            </tbody>
+
+            <tfooter>
+                <tr></tr>
+            </tfooter>
+        </table>
+
+        <form>
+            <label>Email</label>
+            <input type="text"/>
+
+        </form>
+
     </body>
     
 </html>
+
+<!--
+URL:
+
+https://www.google.com/shop?q=dacia#important
+https://www.google.com/shop/dacia#important
+
+https -> schema (https, http - protocoale);
+www.google.com -> domain name [top level domain:(.com)/ domain: google/ sub domain (www.)];
+/shop/ -> path;
+?q -> query parameter;
+#important -> fragment;
+
+-->
