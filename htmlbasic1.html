@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Homework 1</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Homework 1"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+
+    <body>
+
+        <font size="6">  
+            <b>Planets</b>
+        </font>
+    <br>
+    <br>
+
+
+    <table border="1" style="margin-bottom: 15px;">
+
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>Name</th>
+                <th>Mass (10<sup>24</sup>kg)</th>
+                <th>Diameter (km)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td align="center" colspan="2" rowspan="4"><b>Terrestrial Planets</b></td>
+                <td><b>Mercury</b></td>
+                <td>0.330</td>
+                <td>4.879</td>
+            </tr>
+            <tr>
+                <td><b>Venus</b></td>
+                <td>4.87</td>
+                <td>12.104</td> 
+            </tr>
+            <tr>
+                <td><b>Earth</b></td>
+                <td>5.97</td>
+                <td>12.756</td>  
+            </tr>
+            <tr>
+                <td><b>Mars</b></td>
+                <td>0.642</td>
+                <td>6.792</td>    
+            </tr>
+            <tr>
+                <td rowspan="4"><b>Jovian planets</b></td>
+                <td rowspan="2"><b>Gas giants</b></td>
+                <td><b>Jupiter</b></td>
+                <td>1898</td>
+                <td>142.984</td>   
+            </tr>
+            <tr>
+                <td><b>Saturn</b></td>
+                <td>568</td>
+                <td>120.536</td>     
+            </tr>
+            <tr>
+                <td rowspan="2"><b>Ice giants</b></td>
+                <td><b>Uranus</b></td>
+                <td>86.8</td>
+                <td>51.118</td>
+            </tr>
+            <tr>
+                <td><b>Neptune</b></td>
+                <td>102</td>
+                <td>49.528</td>     
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><b>Dwarf planets</b></td>
+                <td><b>Pluto</b></td>
+                <td>0.0146</td>
+                <td>2.370</td>     
+            </tr>
+        </tbody>
+
+        <tfooter>
+            <tr></tr>
+        </tfooter>
+    </table>
+
+
+        <form>
+            <fieldset>
+                <legend>Ask us about planets</legend><br>
+
+                <div>
+                <label for="full name">Full name</label>
+                <input id="full name" type="text" autofocus name="full name" required><br><br>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" autofocus name="email" required><br><br>
+                </div>
+
+            <div>
+                Favorite planet: <br><br>
+                <input type="radio" name="planet" value="Mercury">Mercury <br>
+                <input type="radio" name="planet" value="Venus">Venus <br>
+                <input type="radio" name="planet" value="Earth" checked>Earth <br>
+                <input type="radio" name="planet" value="Mars">Mars <br>
+                <input type="radio" name="planet" value="Jupiter">Jupiter <br>
+                <input type="radio" name="planet" value="Saturn">Saturn <br>
+                <input type="radio" name="planet" value="Uranus">Uranus <br>
+                <input type="radio" name="planet" value="Neptune">Neptune <br>
+                <input type="radio" name="planet" value="Pluto">Pluto <br>
+                <br>
+            </div>
+
+            <div>
+                <input type="checkbox" required>
+                <label>I agree to the <a href="">terms and conditions</a></label><br><br>
+            </div>
+
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Ask away</button>
+            </div>
+            
+            </fieldset>
+        </form>
+
+    </body>
+
+    </html>
