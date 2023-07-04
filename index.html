@@ -88,7 +88,7 @@
             <thead>
                 <tr>
                     <th>Cell 1</th>
-                    <th>Cell 2</th>
+                    <th>Cell 2<sup>23</sup></th>
                     <th>Cell 3</th>
                     <th>Cell 4</th>
                 </tr>
@@ -118,17 +118,17 @@
 
             <fieldset>
                 <label tabindex="0" for="email">Email</label>
-                <input id="email" type="text" placeholder="hello@gmail.com" autofocus/>
+                <input id="email" type="email" placeholder="hello@gmail.com" autofocus name="email" required />
             </fieldset>
 
             <fieldset>
                 <label for="password">Password</label>
-                <input id="password" type="password" />
+                <input id="password" type="password" name="password" required/>
             </fieldset>
 
             <fieldset>
                 <label for="description">Description</label>
-                <textarea id="description" rows="5" cols="5"></textarea>
+                <textarea id="description" rows="5" cols="5" name="description"></textarea>
             </fieldset>
 
             <fieldset>
@@ -143,18 +143,19 @@
 
             <fieldset>
                 <label>Cars:</label>
-
+                <br>
+                <br>
                 <label for="golf">Golf</label>
-                <input id="golf" type="checkbox" checked/>
-
+                <input id="golf" name="golf" type="checkbox" checked/>
+                <br>
                 <label for="passat">Passat</label>
-                <input id="passat" type="checkbox"/>
+                <input id="passat" name="passat" type="checkbox"/>
             </fieldset>
 
             <fieldset>
                 <label>Cars:</label>
 
-                <select>
+                <select name="cartype" required>
                     <option selected>Golf</option>
                     <option>Passat</option>
                 </select>
@@ -162,11 +163,54 @@
 
             <fieldset>
                 <label for="date">Date</label>
-                <input id="date" type="date" />
+                <input id="date" type="date" name="date" required />
             </fieldset>
 
-            <button type="submit">Submit</button>
+           
+            
 
+
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Ask us about planets</legend><br>
+
+                <div>
+                <label for="full name">Full name</label>
+                <input id="full name" type="text" autofocus name="full name" required><br><br>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" autofocus name="email" required><br><br>
+                </div>
+
+            <div>
+                Favorite planet: <br><br>
+                <input type="radio" name="planet" value="Mercury">Mercury <br>
+                <input type="radio" name="planet" value="Venus">Venus <br>
+                <input type="radio" name="planet" value="Earth" checked>Earth <br>
+                <input type="radio" name="planet" value="Mars">Mars <br>
+                <input type="radio" name="planet" value="Jupiter">Jupiter <br>
+                <input type="radio" name="planet" value="Saturn">Saturn <br>
+                <input type="radio" name="planet" value="Uranus">Uranus <br>
+                <input type="radio" name="planet" value="Neptune">Neptune <br>
+                <input type="radio" name="planet" value="Pluto">Pluto <br>
+                <br>
+            </div>
+
+            <div>
+                <input type="checkbox" required>
+                <label>I agree to the <a href="">terms and conditions</a></label><br><br>
+            </div>
+
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Ask away</button>
+            </div>
+            
+            </fieldset>
         </form>
 
     </body>
@@ -184,5 +228,14 @@ www.google.com -> domain name [top level domain:(.com)/ domain: google/ sub doma
 /shop/ -> path;
 ?q -> query parameter;
 #important -> fragment;
+
+REQUEST TYPES (Methods):
+CRUD -> Create, Read, Update, Delete
+
+Get -> Retrieves a resource;
+Post -> Creates a resource;
+Put -> Creates/Updates a resource;
+Patch -> Partial update;
+Delete -> Removes a resource;
 
 -->
