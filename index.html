@@ -17,19 +17,19 @@
         <p id="Important">Ce ma intereseaza pe mine</p>
 
         <div>
-        <a href="https://www.icy-veins.com/" target="_blank">Link to icy-veins.com</a>
+            <a href="https://www.icy-veins.com/" target="_blank">Link to icy-veins.com</a>
         </div>
 
         <div>
-        <a href="mailto:bogdan.marinescu94@yahoo.com">Email me!</a>
+            <a href="mailto:bogdan.marinescu94@yahoo.com">Email me!</a>
         </div>
 
         <div>
-        <a href="tel:0753142872">Call me!</a>
+            <a href="tel:0753142872">Call me!</a>
         </div>
 
         <div>
-        <a href="#Important">Link to goodies</a>
+            <a href="#Important">Link to goodies</a>
         </div>
 
         <ol type="A">
@@ -59,15 +59,15 @@
         </dl>
 
         <div>
-        <img src="https://picsum.photos/id/28/200/300" 
-        width="200px"
-        height="300px"
-        alt="Forest" 
-        />
+            <img src="https://picsum.photos/id/28/200/300" 
+            width="200px"
+            height="300px"
+            alt="Forest" 
+            />
         </div>
 
         <div>
-        <img src="./Untitled.png" width="500px" height="200px">
+            <img src="./Untitled.png" width="500px" height="200px">
         </div>
 
         <picture>
@@ -115,8 +115,57 @@
         </table>
 
         <form>
-            <label>Email</label>
-            <input type="text"/>
+
+            <fieldset>
+                <label tabindex="0" for="email">Email</label>
+                <input id="email" type="text" placeholder="hello@gmail.com" autofocus/>
+            </fieldset>
+
+            <fieldset>
+                <label for="password">Password</label>
+                <input id="password" type="password" />
+            </fieldset>
+
+            <fieldset>
+                <label for="description">Description</label>
+                <textarea id="description" rows="5" cols="5"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label>Gender:</label>
+
+                <label for="F">F</label>
+                <input id="F" name="Gender" type="radio"/>
+
+                <label for="M">M</label>
+                <input id="M" name="Gender" type="radio" checked/>
+            </fieldset>
+
+            <fieldset>
+                <label>Cars:</label>
+
+                <label for="golf">Golf</label>
+                <input id="golf" type="checkbox" checked/>
+
+                <label for="passat">Passat</label>
+                <input id="passat" type="checkbox"/>
+            </fieldset>
+
+            <fieldset>
+                <label>Cars:</label>
+
+                <select>
+                    <option selected>Golf</option>
+                    <option>Passat</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="date">Date</label>
+                <input id="date" type="date" />
+            </fieldset>
+
+            <button type="submit">Submit</button>
 
         </form>
 
