@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Semantic</title>
+  </head>
+
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="">Josh Comeau</a></li>
+          <li><a href="">Latest</a></li>
+          <li><a href="">Posts</a></li>
+          <li><a href="">Goodies</a></li>
+          <li><a href="">Courses</a></li>
+        </ul>
+      </nav>
+      <figure>
+        <picture style="display: contents">
+          <source srcset="https://www.joshwcomeau.com//assets/me-light.webp" type="image/webp" />
+          <img
+            src="https://www.joshwcomeau.com//assets/me-light.png"
+            loading="lazy"
+            alt="3D portrait of the blog's author, Josh Comeau"
+            class="sc-ad84b1ea-0 sc-ad84b1ea-1 gEtGId clgrKg"
+          />
+        </picture>
+
+        <picture style="display: contents">
+          <source srcset="https://www.joshwcomeau.com//assets/me-dark.webp" type="image/webp" />
+          <img
+            src="https://www.joshwcomeau.com//assets/me-dark.png"
+            loading="lazy"
+            alt=""
+            class="sc-ad84b1ea-0 sc-ad84b1ea-2 gEtGId fsWMLS"
+            style="opacity: 1; transition: opacity 0ms ease 0ms"
+          />
+        </picture>
+      </figure>
+
+      <section>
+        <header>
+          <h1>RECENTLY PUBLISHED</h1>
+        </header>
+
+        <article>
+          <h2>The "const" Deception</h2>
+          <p>
+            The “const” keyword in JavaScript is used to create constants,
+            variables that can't change. Curiously, though, we do seem to be
+            able to edit objects and arrays that are created using “const”. In
+            this tutorial, we're going to dig into the incredibly-important
+            distinction between “assignment” and “mutation” in JavaScript.
+          </p>
+          <a>Read more</a>
+        </article>
+      </section>
+
+      <aside>
+        <section>
+            <header>
+            <h1>TOP CATEGORIES</h1>
+            </header>
+            <a>
+                <span>
+                    React
+                </span>
+            </a>
+            <a>
+                <span>
+                    Animation
+                </span>
+            </a>
+            <a>
+                <span>
+                    CSS
+                </span>
+            </a>
+            <a>
+                <span>
+                    Career
+                </span>
+            </a>
+            <a>
+                <span>
+                    Performance
+                </span>
+            </a>
+        </section>
+      </aside>
+
+      <footer>
+        <nav>
+            <ul>
+                <li><a href="">React</a></li>
+                <li><a href="">Animation</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">Career</a></li>
+                <li><a href="">Performance</a></li>
+            </ul>
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
