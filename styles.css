@@ -1,4 +1,90 @@
+/* Target everything */
+*:focus {
+  outline: 3px solid deeppink;
+}
+/* other option 
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid deeppink;
+} */
+
+/* Element (tag) selector */
 li {
-  background-color: deeppink;
-  font-size: 24px;
+  list-style-type: none;
+}
+
+/* ID selector */
+#blue {
+  background-color: blue;
+}
+
+/* Class selector */
+.list-item {
+  background-color: aqua;
+}
+
+/* Atribute selector */
+[disabled] {
+  color: brown;
+}
+
+[type="text"] {
+  border: 2px solid green;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* Pseudo classes */
+
+a:visited {
+  color: darkolivegreen;
+}
+
+a:active {
+  color: red;
+}
+
+a:focus {
+  /* outline: 3px solid deeppink; */
+}
+
+.border-hover:hover {
+  border: dotted deeppink;
+}
+
+/* number, even, odd */
+li:nth-child(3) {
+  color: indigo;
+}
+
+/* Pseudo elements */
+
+/*
+.star::before {
+  content: "⭐";
+  font-size: 25px;
+}
+*/
+
+.star::after {
+  content: "⭐";
+  font-size: 25px;
+}
+
+.star::first-letter {
+  font-size: 30px;
+}
+
+.text {
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px black;
+}
+
+.container1 {
+    
 }
