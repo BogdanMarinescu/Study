@@ -104,3 +104,26 @@ div ~ p {
 
 /* Any descendant combinator " " */
 /* Direct descendant combinator > */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+  font-style: italic;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* 
+px
+em -> se raporteaza la font-sizeul elementului parinte;
+rem -> se raporteaza la root (body) font-size;
+*/
