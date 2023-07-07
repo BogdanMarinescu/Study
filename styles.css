@@ -86,5 +86,21 @@ li:nth-child(3) {
 }
 
 .container1 {
-    
+  color: purple;
+  font-size: 20px;
 }
+
+p + p {
+  color: red;
+}
+
+div ~ p {
+  color: darkgreen;
+}
+
+/* .container1 > p:nth-child(1) {
+  color: blue;
+} */
+
+/* Any descendant combinator " " */
+/* Direct descendant combinator > */
