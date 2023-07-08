@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html style="background-color: lightblue" lang="en">
+  <head>
+    <meta name="description" content="WowClasses" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WoWClasses</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <fieldset
+          style="
+            background-image: url(https://bnetcmsus-a.akamaihd.net/cms/blog_header/zm/ZMHH4VJU2CH61687967915558.jpg);
+          "
+        >
+          <legend align="left" style="font-size: 30px">
+            <b>Ask us about classes</b>
+          </legend>
+          <br />
+
+          <div>
+            <label for="username">Username</label>
+            <input
+              id="username"
+              type="text"
+              autofocus
+              name="username"
+              required
+            /><br /><br />
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              autofocus
+              name="password"
+              required
+            /><br /><br />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              autofocus
+              name="email"
+              required
+            /><br /><br />
+          </div>
+
+          <div>
+            <label for="dropdown"
+              >Which option best describes your favorite role?</label
+            >
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled="" selected="" value="">
+                Select favorite role
+              </option>
+              <option value="Damage">Damage</option>
+              <option value="Tank">Tank</option>
+              <option value="Healer">Healer</option></select
+            ><br /><br />
+          </div>
+
+          <div>
+            <p>Select a class:</p>
+            <input
+              id="hunter"
+              type="radio"
+              name="class"
+              value="Hunter"
+              required
+            />
+            <label for="hunter">Hunter</label>
+            <br />
+            <input
+              id="warrior"
+              type="radio"
+              name="class"
+              value="Warrior"
+              required
+            />
+            <label for="warrior">Warrior</label>
+            <br />
+            <input id="mage" type="radio" name="class" value="Mage" required />
+            <label for="mage">Mage</label>
+            <br />
+            <input
+              id="priest"
+              type="radio"
+              name="class"
+              value="Priest"
+              required
+            />
+            <label for="priest">Priest</label>
+            <br />
+            <input
+              id="warlock"
+              type="radio"
+              name="class"
+              value="Warlock"
+              required
+            />
+            <label for="warlock">Warlock</label>
+            <br />
+            <input
+              id="shaman"
+              type="radio"
+              name="class"
+              value="Shaman"
+              required
+            />
+            <label for="shaman">Shaman</label>
+            <br />
+            <input
+              id="druid"
+              type="radio"
+              name="class"
+              value="Druid"
+              required
+            />
+            <label for="druid">Druid</label>
+            <br />
+            <input
+              id="rogue"
+              type="radio"
+              name="class"
+              value="Rogue"
+              required
+            />
+            <label for="rogue">Rogue</label>
+            <br />
+            <input
+              id="paladin"
+              type="radio"
+              name="class"
+              value="Paladin"
+              required
+            />
+            <label for="paladin">Paladin</label>
+            <br /><br />
+          </div>
+
+          <div>
+            <input id="agree" type="checkbox" required />
+            <label for="agree"
+              >I agree to the
+              <a
+                style="color: yellow"
+                href="https://worldofwarcraft.blizzard.com/en-us/news/23973734/rules-of-engagement-classic-hardcore-is-coming-to-world-of-warcraft"
+                target="_blank"
+                >terms and conditions</a
+              ></label
+            ><br /><br />
+          </div>
+
+          <div>
+            <label for="comments">Any comments or suggestions?</label>
+            <br />
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+
+          <br />
+
+          <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Ask away</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
