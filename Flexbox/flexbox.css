@@ -1,0 +1,22 @@
+header {
+background-color: green;
+}
+
+nav {
+background-color: yellow;
+}
+
+main {
+background-color: purple;
+}
+
+aside {
+background-color: orange;
+}
+
+footer {
+background-color: brown;
+}
+.container1 {
+    display: flex;
+}
