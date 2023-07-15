@@ -83,3 +83,8 @@ Sticky --> Combination of fixed and absolute;
   background-color: yellow;
   z-index: 1;
 }
+.card-sticky {
+  position: sticky;
+  top: 20px;
+  background-color: blueviolet;
+}
