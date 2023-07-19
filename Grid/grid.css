@@ -1,4 +1,4 @@
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 50px);
@@ -10,4 +10,10 @@
 }
 .grid div {
     border: 1px solid;
+} */
+.grid2 {
+    width: 100vw;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
