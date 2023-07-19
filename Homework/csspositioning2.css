@@ -30,28 +30,40 @@ body {
   top: -124px;
 }
 .title2 {
+  position: relative;
   font-size: 30px;
   font-weight: 900;
   margin-bottom: 30px;
+  right: 350px;
+  top: -50px;
 }
 .name {
+  position: relative;
   font-weight: bold;
   font-size: 20px;
+  right: 80px;
+  top: -50px;
 }
 .email {
+  position: relative;
   font-weight: bold;
   font-size: 20px;
+  right: 80px;
+  top: -50px;
 }
 .message {
+  position: relative;
   font-weight: bold;
   font-size: 20px;
+  right: 70px;
+  top: -200px;
 }
 .submit {
   font-weight: bold;
   font-size: 20px;
   padding: 5px 30px;
 }
-.button {
+/* .button {
   position: absolute;
   background-color: blue;
   border: 2px solid white;
@@ -59,7 +71,7 @@ body {
   text-decoration: none;
   padding: 10px 20px;
   color: white;
-}
+} */
 
 .modal {
   width: 100%;
@@ -77,19 +89,35 @@ body {
   height: 500px;
   background-color: white;
   border-radius: 10px;
-   text-align: center; 
+  text-align: center;
   padding: 20px;
 }
 
 input {
-  width: 60%;
-  margin-bottom: 10px; 
+  position: relative;
+  width: 70%;
+  margin-bottom: 10px;
   display: inline-block;
-  
+  margin: 10px auto;
+  left: 30px;
+  top: -50px;
 }
 textarea {
-  width: 60%;
+  position: relative;
+  width: 70%;
+  top: -40px;
+  left: 20px;
+  height: 180px;
 }
 label {
   display: inline-block;
+}
+
+.close {
+  position: relative;
+  left: 410px;
+  top: -70px;
+  font-size: 35px;
+  color: white;
+  transform: rotate(45deg);
 }
