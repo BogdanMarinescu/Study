@@ -32,6 +32,7 @@ main {
     padding: 20px;
     background-color: black;
     color: white;
+    margin-bottom: 40px;
 }
 
 .par1 {
@@ -44,4 +45,27 @@ main {
 
 .par3 {
     padding: 20px;
+}
+
+.li1 {
+    padding: 20px;
+    color: grey;
+}
+.li2 {
+    padding: 20px;
+    color: grey;
+}
+.li3 {
+    padding: 20px;
+    color: grey;
+}
+.li4 {
+    padding: 20px;
+    color: grey;
+}
+.li5 {
+   position: relative;
+   padding: 20px;
+   color: grey;
+   top: 250px;
 }
