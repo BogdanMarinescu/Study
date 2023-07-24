@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  position: fixed;
+  height: 100%;
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    flex: 1;
+    background-color: #21222b;
+}
+
+main {
+    flex: 9;
+    background-color: #c1c1c1;
+}
+
+.title {
+    padding: 20px;
+    font-size: 40px;
+}
+
+.par {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.par1 {
+    padding: 20px;
+}
+
+.par2 {
+    padding: 20px;
+}
+
+.par3 {
+    padding: 20px;
+}
