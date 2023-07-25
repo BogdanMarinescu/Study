@@ -1,5 +1,5 @@
 :root {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 body {
@@ -7,52 +7,99 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-body::-webkit-scrollbar {
-  width: 0.25rem;
-}
-body::-webkit-scrollbar-track {
-  background: #1e1e24;
-}
-body::-webkit-scrollbar-thumb {
-  background: #6649b8;
-}
+
 main {
-  margin-left: 5rem;
-  padding: 1rem;
+  margin-left: 90px;
+  padding: 16px;
 }
- 
-.navbar {
-width: 5rem;
-height: 100vh;
-position: fixed;
-background-color: #23232e;
+
+p {
+  margin-bottom: 16px;
 }
+
 .title {
-  margin-bottom: 1rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-.unordered {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.navbar {
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  background-color: #23232e;
+  transition: width 200ms ease;
 }
-.item {
-    width: 100%;
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
-.item:last-child{
-    margin-top: auto;
+
+.nav-item {
+  width: 100%;
 }
-.link {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color: #b6b6b6;
-    text-decoration: none;
+
+.nav-item:last-child {
+  margin-top: auto;
 }
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.6);
+}
+.nav-link:hover {
+  filter: grayscale(0%) opacity(0.6);
+  background: #141418;
+}
+
 .link-text {
-    display: none;
-    margin-left: 1rem;
+  display: none;
+  margin-left: 16px;
+}
+
+.nav-link svg {
+  min-width: 32px;
+  margin: 0 24px;
+}
+
+.navbar:hover {
+  width: 300px;
+}
+
+.navbar:hover .link-text {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+}
+
+.fa-primary {
+  color: #ff7eee;
+}
+.fa-secondary {
+  color: #df49a6;
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  background: #141418;
+  width: 100%;
+}
+
+.navbar:hover .logo svg {
+  display: none;
+}
+.logo-text {
+  position: relative;
+  left: 60px;
 }
