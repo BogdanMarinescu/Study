@@ -10,12 +10,10 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-
 main {
   margin-left: 90px;
   padding: 16px;
 }
-
 p {
   margin-bottom: 16px;
 }
@@ -24,7 +22,6 @@ p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
 .navbar {
   width: 80px;
   height: 100vh;
@@ -32,7 +29,7 @@ p {
   background-color: #23232e;
   transition: width 200ms ease;
 }
-.navbar-nav {
+.navbar-ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -41,53 +38,44 @@ p {
   align-items: center;
   height: 100%;
 }
-
-.nav-item {
+.navbar-item {
   width: 100%;
 }
-
-.nav-item:last-child {
+.navbar-item:last-child {
   margin-top: auto;
 }
-
-.nav-link {
+.navbar-link {
   display: flex;
   align-items: center;
   height: 80px;
   text-decoration: none;
   filter: grayscale(100%) opacity(0.6);
 }
-.nav-link:hover {
+.navbar-link:hover {
   filter: grayscale(0%) opacity(0.6);
   background: #141418;
 }
-
 .link-text {
   display: none;
   margin-left: 16px;
 }
-
-.nav-link svg {
+.navbar-link svg {
   min-width: 32px;
   margin: 0 24px;
 }
-
 .navbar:hover {
   width: 300px;
 }
-
 .navbar:hover .link-text {
   display: block;
   color: rgba(255, 255, 255, 1);
 }
-
 .fa-primary {
   color: #ff7eee;
 }
 .fa-secondary {
   color: #df49a6;
 }
-
 .logo {
   font-size: 24px;
   margin-bottom: 16px;
@@ -95,7 +83,6 @@ p {
   background: #141418;
   width: 100%;
 }
-
 .navbar:hover .logo svg {
   display: none;
 }
