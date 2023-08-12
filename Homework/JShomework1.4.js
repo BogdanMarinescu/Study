@@ -1,15 +1,20 @@
 console.log(`JShomework1.4.js is loaded...`);
 
-let arr = [1, 4, 5, 1, 6, 1, 7, 1];
-let item = 1
+function countItem(arr, item) {
+  let count = 0;
 
-for (i = 0; i < arr.length; i++) {
-  if (item[arr[i]]) {
-    item[arr[i]] = item[arr[i]]++;
-  } else {
-    item[arr[i]] = 1;
+  for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === item) {
+          count++;
+      }
   }
-  console.log(item);
+
+  return count;
 }
 
+const myArray = [1, 2, 3, 1, 4, 1, 5, 1];
+const itemToCount = 1;
+const result = countItem(myArray, itemToCount);
+
+console.log(result);
 console.log(`JShomework1.4.js has executed...`);
