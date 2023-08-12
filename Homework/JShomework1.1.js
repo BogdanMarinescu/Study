@@ -1,29 +1,13 @@
-console.log(`JShomework.js is loaded...`);
+console.log(`JShomework1.1.js is loaded...`);
+let i;
+i = Number(i);
+let output = ``;
 
-function readUserNumber() {
-  let inputNr = prompt(`Please insert a number`);
-  inputNr = Number(inputNr);
-
-  return inputNr;
-}
-
-function generateResultString(inputNr) {
-  let output = ``;
-  for (let i = 1; i <= inputNr; i++) {
-    if (output) {
-      output = output + ``;
-    }
-    output = output + i;
+for (let i = 1; i <= 20; i++) {
+  if (output) {
+    output = output;
   }
-  return output;
+  output = output + i + `;`;
 }
-
-function displayResult(output) {
-  console.log(output);
-}
-
-let userNr = readUserNumber();
-let displayString = generateResultString(userNr);
-displayResult(displayString);
-
-console.log(`JShomework.js has executed...`);
+console.log(output);
+console.log(`Finish`);
