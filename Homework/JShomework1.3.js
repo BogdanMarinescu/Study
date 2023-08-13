@@ -24,4 +24,5 @@ function displayMinOfArr(min) {
 let arr = displayArr();
 let showMinOfArr = generateMinOfArr(arr);
 displayMinOfArr(showMinOfArr);
+
 console.log(`JShomework1.3.js has executed...`);

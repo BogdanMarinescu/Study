@@ -10,4 +10,4 @@ for (let i = 1; i <= 20; i++) {
   output = output + i + `;`;
 }
 console.log(output);
-console.log(`Finish`);
+console.log(`JShomework1.1.js has executed...`);

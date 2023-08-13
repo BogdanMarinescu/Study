@@ -6,4 +6,4 @@ for (let i = 1; i <= 20; i+=2) {
         console.log(i);  
 }
 
-console.log(`Finish`);
+console.log(`JShomework1.2.js has executed...`);
