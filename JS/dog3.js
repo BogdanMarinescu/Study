@@ -1,22 +1,5 @@
 console.log(`dog3.js is loaded...`);
 
-// const url = "https://dog.ceo/api/breeds/list/all";
-
-// async function getBreeds() {
-//     const response = await fetch(url);
-//     const breeds = await response.json();
- 
-//     for(const breedType in breeds.message) {
-//         console.log(``);
-//         console.log(breedType);
-//         console.log(breeds.message[breedType]);
-//     }
-//     // console.log(breeds.message[`hound`]);
-// }
-
-// getBreeds();
-
- // Fetch and display the list of available dog breeds
  fetch('https://dog.ceo/api/breeds/list/all')
  .then(response => response.json())
  .then(data => {
@@ -24,13 +7,13 @@ console.log(`dog3.js is loaded...`);
      
      for (const breed in data.message) {
          if (data.message[breed].length === 0) {
-             // No sub-breeds, add as a list item
+            
              const listItem = document.createElement('li');
              listItem.textContent = breed;
              listItem.addEventListener('click', () => fetchRandomDogImage(breed));
              breedList.appendChild(listItem);
          } else {
-             // Has sub-breeds, add as a list item with sub-list
+             
              const listItem = document.createElement('li');
              listItem.textContent = breed;
              const subList = document.createElement('ul');
@@ -47,7 +30,7 @@ console.log(`dog3.js is loaded...`);
  })
  .catch(error => console.error('Error fetching breed list:', error));
 
-// Fetch and display a random dog image for the selected breed or sub-breed
+
 function fetchRandomDogImage(breed, subBreed = '') {
  const dogImage = document.getElementById('dogImage');
  let apiUrl = `https://dog.ceo/api/breed/${breed}${subBreed ? `/${subBreed}` : ''}/images/random`;
